@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+
+// ABSTRACT
+@import 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins',
+  'abstracts/custom';
+
+// BASE
+@import 'base/rest', 'base/base', 'base/fonts', 'base/typography',
+  'base/icon/style.scss';
+
+@import "helper/utils";
+
+// COMPONENT
+@import "components/book", "components/testimonial", "components/swiper", "components/buttons", "components/news",
+"components/mobile-menu", 'components/pagination', 'components/social-links', 'components/gallery', 'components/form', 'components/scroll';
+
+// PAGES
+
+// LAYOUT
+@import 'layout/header', 'layout/footer';
+
+
+.main {
+  min-height: 50vh;
+}
