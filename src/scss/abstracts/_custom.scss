@@ -2,29 +2,29 @@
 
 // CONTAINER
 $container-max-widths: (
-        sm: 540px,
-        md: 720px,
-        lg: 960px,
-        xl: 1140px,
-        xxl: 1460px,
-        xxxl: 1750px,
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1460px,
+  xxxl: 1750px,
 );
 
 // BREAKPOINTS
 $grid-breakpoints: (
-        xs: 0,
-        sm: 576px,
-        md: 768px,
-        lg: 992px,
-        xl: 1200px,
-        xxl: 1500px,
-        xxxl: 1900px,
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1500px,
+  xxxl: 1900px,
 );
 
 // BUTTONS
-$btn-padding-y: 18px;
+$btn-padding-y: 10px;
 $btn-padding-x: 60px;
-$btn-font-size: 18px;
+$btn-font-size: 16px;
 $btn-font-weight: normal;
 $btn-border-radius: 10px;
 
