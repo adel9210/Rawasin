@@ -42,6 +42,91 @@ jQuery(document).ready(function ($) {
     speed: 700, // Transition speed (in ms), adjust to make it smoother
   });
 
+  const swiper_services = new Swiper('.services__swiper', {
+    slidesPerView: 3, // Keep 1 slide visible by default
+    spaceBetween: 30, // Slight gap between slides to avoid overlap
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 768px (tablets)
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      // when window width is >= 991px (desktops)
+      991: {
+        slidesPerView: 3, // Show 2 slides on larger screens
+        spaceBetween: 30,
+      },
+    },
+    pagination: {
+      el: '.services__swiper .swiper-pagination',
+      clickable: true, // Enable pagination clicking
+    },
+    navigation: {
+      nextEl: '.services__swiper .swiper-controls--next',
+      prevEl: '.services__swiper .swiper-controls--prev',
+    },
+  });
+
+  const swiper_ourWork = new Swiper('.our-work__swiper', {
+    slidesPerView: 3, // Keep 1 slide visible by default
+    spaceBetween: 30, // Slight gap between slides to avoid overlap
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 768px (tablets)
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // when window width is >= 991px (desktops)
+      991: {
+        slidesPerView: 2, // Show 2 slides on larger screens
+        spaceBetween: 30,
+      },
+    },
+    pagination: {
+      el: '.our-work__swiper .swiper-pagination',
+      clickable: true, // Enable pagination clicking
+    },
+    navigation: {
+      nextEl: '.our-work__swiper .swiper-controls--next',
+      prevEl: '.our-work__swiper .swiper-controls--prev',
+    },
+  });
+
+  const swiper_media_services = new Swiper('.media-services__swiper', {
+    slidesPerView: 1, // Keep 1 slide visible by default
+    spaceBetween: 0, // Slight gap between slides to avoid overlap
+    pagination: {
+      el: '.media-services__swiper .swiper-pagination',
+      clickable: true, // Enable pagination clicking
+    },
+    navigation: {
+      nextEl: '.media-services__swiper .swiper-controls--next',
+      prevEl: '.media-services__swiper .swiper-controls--prev',
+    },
+  });
+
   // REMOVE SPINNER
   // setTimeout(() => {
   $('.loader').fadeOut('slow');

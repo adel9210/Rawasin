@@ -7,25 +7,25 @@
   min-width: max-content;
   padding: 10px 38px;
   background-color: transparent;
-  background: var(--G600, #165b36);
+  background: var(--G600, #5ba72f);
   color: #fff;
   box-shadow: none;
   outline: none;
-  border: 1px solid #165b36;
+  border: 1px solid #5ba72f;
   transition: all 0.3s;
 
   &:hover {
     background-color: transparent;
-    border-color: rgba(129, 129, 129, 0.3);
+    border-color: #5ba72f;
   }
 
   &--outline {
-    border: 1px solid rgba(129, 129, 129, 0.3);
+    border: 1px solid #5ba72f;
     background-color: transparent;
 
     &:hover {
-      background-color: #165b36;
-      border-color: rgba(129, 129, 129, 0.3);
+      background-color: #5ba72f;
+      border-color: #5ba72f;
     }
   }
 

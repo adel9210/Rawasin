@@ -79,3 +79,276 @@
     }
   }
 }
+
+.services {
+  padding: 70px 0;
+  background-color: #353535;
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #5ba72f;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  &__swiper {
+    margin-top: 30px;
+
+    .swiper-wrapper {
+      align-items: center;
+    }
+
+    .swiper-slide:nth-of-type(2) {
+      .co-service {
+        @extend .co-service--active;
+      }
+    }
+  }
+}
+
+.co-service {
+  background-color: #252525;
+  border-radius: 16px;
+  padding: 24px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__icon {
+    font-size: 30px;
+    color: #52962a;
+    width: 84px;
+    height: 84px;
+    flex-shrink: 0;
+    background-color: #292f26;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:before {
+      color: #52962a;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #5ba72f;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 36px;
+    margin-top: 20px;
+    color: #959595;
+    text-align: right;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &--active {
+    background-color: #52962a;
+    padding: 40px 24px;
+
+    * {
+      color: #fff !important;
+    }
+
+    .icon {
+      color: #fff;
+      background-color: transparent;
+
+      &:before {
+        color: currentColor;
+      }
+    }
+  }
+}
+
+.media-services {
+  background-color: #353535;
+  padding: 70px 0;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #5ba72f;
+  }
+
+  &__tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+
+    &__tab {
+      display: block;
+      padding: 40px 18px;
+      background-color: #232720;
+      transition: 0.3s;
+      position: relative;
+
+      &:first-child {
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+      }
+      &:last-child {
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+      }
+
+      &--active,
+      &:hover {
+        background-color: #5ba72f;
+        .media-services__tabs__tab__link {
+          color: #fff;
+        }
+
+        &.media-services__tabs__tab:after {
+          opacity: 1;
+        }
+      }
+
+      &__link {
+        color: #d2d2d2;
+        font-size: 18px;
+      }
+
+      &:after {
+        content: '';
+        width: 46px;
+        height: 46px;
+        background-color: #5ba72f;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        position: absolute;
+        bottom: -23px;
+        border-radius: 10px;
+        transition: 0.2s;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.co-media-service {
+  &__header {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__image {
+    border-radius: 12px;
+    flex: 5;
+    position: relative;
+
+    img {
+      width: 100%;
+      position: relative;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #244734;
+      border-radius: 12px;
+      transform: rotate(3deg);
+    }
+  }
+
+  &__icon {
+    font-size: 50px;
+    color: #52962a;
+
+    &:before {
+      color: #52962a;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: right;
+  }
+}
+
+.our-work {
+  padding: 70px 0;
+  background-color: #353535;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #5ba72f;
+  }
+}
+
+.co-our-work {
+  background-color: #252525;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  overflow: hidden;
+
+  &__image {
+  }
+
+  &__info {
+    padding: 24px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
+    color: #949494;
+    text-align: right;
+  }
+}

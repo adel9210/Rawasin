@@ -14,18 +14,19 @@
   &--next,
   &--prev {
     display: flex;
-    width: 48px;
-    height: 48px;
+    width: 36px;
+    height: 36px;
     padding: 10px;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border-radius: 8px;
-    background: #375041;
+    border-radius: 50%;
+    background: rgba(#000000, 0.15);
+    color: #447d23;
     transition: all 0.5s;
 
     .icon {
-      font-size: 25px;
+      font-size: 20px;
       transition: all 0.5s;
     }
 
@@ -33,7 +34,8 @@
       background-color: $secondary-color;
 
       .icon {
-        font-size: 30px;
+        //font-size: 30px;
+        color: #ffff;
       }
     }
   }
@@ -47,7 +49,7 @@
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #ffad4e;
+  background-color: #5ba72f;
   opacity: 1;
 }
 
