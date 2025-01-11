@@ -447,3 +447,47 @@
     }
   }
 }
+
+.voice-services {
+  background-color: #353535;
+  &__title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 77px;
+  }
+  &__items {
+    padding: 100px 30px;
+    background-image: url('../img/home/voice.png');
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 40px;
+  }
+}
+
+.co-voice {
+  padding: 30px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  border: 1px solid #979797;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+
+  &:hover,
+  &--active {
+    background-color: #5ba72f;
+    border-color: #5ba72f;
+    color: #fff;
+  }
+
+  .icon {
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+}
