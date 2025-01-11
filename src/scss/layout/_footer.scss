@@ -1,7 +1,8 @@
 // styles.scss
 
 .footer {
-  background-color: #183021;
+  //background-color: #183021;
+  background-image: url('../img/layout/footer-bg.png');
 
   &__logo {
     max-width: 100%;
@@ -11,6 +12,10 @@
     font-size: 18px;
     line-height: 24px;
     text-align: right;
+
+    span {
+      color: #5ba72f;
+    }
   }
 
   &__title {
@@ -23,29 +28,10 @@
 
   &__list {
     li {
-      font-size: 14px;
+      font-size: 18px;
       line-height: 19.22px;
       text-align: right;
       margin-bottom: 16px;
     }
   }
-
-  &__rights {
-    background-color: #14261b;
-    font-size: 16px;
-    padding: 24px;
-    line-height: 19.22px;
-    text-align: center;
-    color: #b9c2bd;
-  }
-
-  &__copyright {
-    font-size: 16px;
-    text-align: center;
-    padding: 24px 0;
-    background: #14261B;
-    color: #B9C2BD;
-  }
 }
-
-
