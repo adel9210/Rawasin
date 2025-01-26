@@ -520,16 +520,17 @@
     margin-top: 35px;
 
     &__item {
-      padding: 35px 20px;
-      background-color: #252525;
-      border-radius: 50px;
+      padding: 20px;
+      //background-color: #252525;
+      border-radius: 20px;
       position: relative;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+      background-image: url('../img/home/card-bg.svg');
 
       &__count {
         width: 70px;
         height: 70px;
-        background-color: #6dc23a;
+        background-color: #52962a;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -538,13 +539,13 @@
         color: #fff;
 
         position: absolute;
-        top: 15px;
-        left: 15px;
+        top: 0;
+        left: 60px;
       }
 
       &__title {
         font-size: 32px;
-        color: #6dc23a;
+        color: #52962a;
         font-weight: bold;
         margin-bottom: 15px;
       }
@@ -552,6 +553,7 @@
       &__description {
         font-size: 24px;
         line-height: 1.6;
+        margin-top: 35px;
       }
 
       @include media-breakpoint-down(sm) {
