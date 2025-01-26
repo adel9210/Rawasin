@@ -166,10 +166,32 @@
 
     &__show-more {
       position: absolute;
-      left: 50%;
+      display: flex;
+      justify-content: center;
+      height: 100px;
+
+      width: 100%;
+      //left: 50%;
       bottom: -2px;
-      transform: translateX(-50%);
+      //transform: translateX(-50%);
       z-index: 999;
+
+      &__icon {
+        position: absolute;
+        top: 40%;
+
+        // add animation top bottom smooth
+        animation: moveUpDown 2s infinite ease-in-out;
+        @keyframes moveUpDown {
+          0%,
+          100% {
+            top: 40%;
+          }
+          50% {
+            top: 50%;
+          }
+        }
+      }
     }
 
     &__title {
@@ -234,6 +256,32 @@
       background-size: 100%;
       background-repeat: no-repeat;
       background-color: #195a38;
+
+      &__swiper {
+        &__controls {
+          bottom: 170px;
+        }
+      }
+
+      &__left__image {
+        display: none;
+      }
+
+      &__title {
+        font-size: 36px;
+        margin-bottom: 23px;
+      }
+      &__description {
+        font-size: 18px;
+        margin-bottom: 23px;
+        width: 90%;
+      }
+
+      &__swiper {
+        .swiper-slide {
+          margin-left: 0 !important;
+        }
+      }
     }
   }
 }

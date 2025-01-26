@@ -45,7 +45,7 @@ jQuery(document).ready(function ($) {
   const swiper_services = new Swiper('.services__swiper', {
     slidesPerView: 3, // Keep 1 slide visible by default
     spaceBetween: 30, // Slight gap between slides to avoid overlap
-    loop: true,
+    // loop: true,
 
     breakpoints: {
       // when window width is >= 320px

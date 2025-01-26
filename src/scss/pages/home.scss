@@ -1,5 +1,6 @@
 .who-we-are {
   padding: 90px 0;
+  position: relative;
   background: linear-gradient(
       180deg,
       rgba(82, 150, 42, 0.2) 0%,
@@ -82,6 +83,32 @@
       }
     }
   }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/home/shape.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__description {
+      width: 100%;
+    }
+
+    &__left {
+      margin-top: 30px;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
 }
 
 .services {
@@ -108,7 +135,11 @@
       align-items: center;
     }
 
-    .swiper-slide:nth-of-type(2) {
+    & .swiper-slide {
+      height: 300px;
+    }
+
+    .swiper-slide-next {
       .co-service {
         @extend .co-service--active;
       }
@@ -120,6 +151,8 @@
   background-color: #252525;
   border-radius: 16px;
   padding: 24px;
+  transition: 0.3s;
+  cursor: pointer;
 
   &__header {
     display: flex;
@@ -164,7 +197,9 @@
     overflow: hidden;
   }
 
-  &--active {
+  &--active,
+  &:hover,
+  &:nth-child(2) {
     background-color: #52962a;
     padding: 40px 24px;
 
@@ -179,6 +214,16 @@
       &:before {
         color: currentColor;
       }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__title {
+      font-size: 20px;
+    }
+
+    &__description {
+      font-size: 16px;
     }
   }
 }
@@ -254,6 +299,17 @@
         opacity: 0;
       }
     }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+
+      &__tab {
+        &:first-child,
+        &:last-child {
+          border-radius: 0 !important;
+        }
+      }
+    }
   }
 }
 
@@ -318,6 +374,12 @@
     margin-bottom: 20px;
     color: #fff;
     text-align: right;
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__image {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -384,6 +446,10 @@
       transform: translateX(60px);
     }
   }
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
 }
 
 .contact-us {
@@ -416,6 +482,16 @@
     transform: translateY(-50px);
     border-radius: 50%;
     padding-top: 15px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 30px;
+    &__title {
+      font-size: 24px;
+    }
+    &__container {
+      flex-direction: column;
+    }
   }
 }
 
@@ -477,6 +553,29 @@
         font-size: 24px;
         line-height: 1.6;
       }
+
+      @include media-breakpoint-down(sm) {
+        &__count {
+          width: 50px;
+          height: 50px;
+          font-size: 20px;
+        }
+
+        &__title {
+          font-size: 24px;
+        }
+
+        &__description {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .image-drawer {
+      width: 90%;
+      margin: 0 auto;
     }
   }
 }
@@ -495,6 +594,14 @@
     background-size: cover;
     background-position: bottom;
     border-radius: 40px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__items {
+      .d-flex {
+        flex-wrap: wrap;
+      }
+    }
   }
 }
 
@@ -524,5 +631,14 @@
     font-size: 20px;
     //font-weight: 700;
     margin-top: 20px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .co-media-service__title,
+  .voice-services__title,
+  .who-we-are__title,
+  .why-rawasin__title {
+    font-size: 24px;
   }
 }
