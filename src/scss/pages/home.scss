@@ -311,6 +311,13 @@
       }
     }
   }
+
+  @include media-breakpoint-down(sm) {
+    &__header {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
 }
 
 .co-media-service {
@@ -398,6 +405,13 @@
     font-size: 36px;
     font-weight: 700;
     color: #5ba72f;
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__header {
+      flex-direction: column;
+      row-gap: 20px;
+    }
   }
 }
 
@@ -575,6 +589,7 @@
   }
 
   @include media-breakpoint-down(sm) {
+    padding: 60px 0;
     .image-drawer {
       width: 90%;
       margin: 0 auto;
